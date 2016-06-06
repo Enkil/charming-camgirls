@@ -1677,6 +1677,9 @@ header {
     margin-top: 125px;
     margin-bottom: 110px;
     letter-spacing: 1px; }
+    @media (max-width: 33.74em) {
+      header p.b-cta {
+        font-size: 20px; } }
     header p.b-cta span.summ {
       color: #bf152b; }
   header p.cta-text {

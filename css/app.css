@@ -2154,6 +2154,10 @@ header form.cta-form > button.submit {
   header section.site-phone {
     margin-top: 50px;
   }
+
+  header p.b-cta {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=../maps/app.css.map */
