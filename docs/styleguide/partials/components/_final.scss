@@ -1,0 +1,18 @@
+section.b-final{
+  background-color: $c-dark-blue;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  div.text{
+    background-color: $c-light-blue;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    p{
+      font-family: "AG-Demi";
+      font-size: 15px;
+      color: $c-white;
+    }
+  }
+}

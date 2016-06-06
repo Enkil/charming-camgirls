@@ -873,6 +873,12 @@ h2.site-h2.-bg {
   text-shadow: none;
 }
 
+h2.site-h2.-no-shadow {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-shadow: none;
+}
+
 body {
   background-color: #fff;
 }
@@ -1170,6 +1176,25 @@ header form.cta-form > button.submit {
   left: 20px;
   width: 100%;
   margin: 0;
+  color: #fff;
+}
+
+section.b-final {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #175367;
+}
+
+section.b-final div.text {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #147c9e;
+}
+
+section.b-final div.text p {
+  font-family: 'AG-Demi';
+  font-size: 15px;
   color: #fff;
 }
 

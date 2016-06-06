@@ -1625,6 +1625,10 @@ h2.site-h2 {
     text-shadow: none;
     margin-bottom: 20px;
     margin-top: 20px; }
+  h2.site-h2.-no-shadow {
+    text-shadow: none;
+    margin-top: 0;
+    margin-bottom: 30px; }
 
 body {
   background-color: #fff; }
@@ -1853,3 +1857,17 @@ header {
     bottom: 15px;
     left: 20px;
     z-index: 10; }
+
+section.b-final {
+  background-color: #175367;
+  padding-top: 30px;
+  padding-bottom: 40px; }
+  section.b-final div.text {
+    background-color: #147c9e;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box; }
+    section.b-final div.text p {
+      font-family: "AG-Demi";
+      font-size: 15px;
+      color: #fff; }
