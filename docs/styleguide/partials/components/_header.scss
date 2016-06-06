@@ -87,6 +87,8 @@ header{
 
     @include mq($from:xs, $until:sm){
       font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
 
     span.summ{
