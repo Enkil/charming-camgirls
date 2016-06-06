@@ -1,0 +1,65 @@
+.s-requirement{
+  margin-bottom: 30px;
+
+  div.text{
+    background-color: $c-blue;
+    margin-top: 20px;
+    padding: 25px;
+
+    p{
+      text-align: center;
+      font-family: "AG-Demi";
+      font-size: 22px;
+      color: $c-white;
+      margin: 0;
+      &:first-child{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.requirment-item{
+  width: 100%;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover{
+    > img{
+      transform: scale(2);
+    }
+  }
+
+  &.-small{
+    height: 140px;
+    &:first-child{
+      margin-bottom: 20px;
+      @include mq($from:xs, $until:md){
+        margin-top: 20px;
+      }
+    }
+  }
+
+  > img{
+    @include transition();
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  > p.text{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    font-family:"AG-Demi";
+    font-size: 30px;
+    color: $c-white;
+    bottom: 15px;
+    left: 20px;
+    z-index: 10;
+  }
+}

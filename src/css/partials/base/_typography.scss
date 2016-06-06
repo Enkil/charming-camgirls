@@ -10,4 +10,15 @@ h2.site-h2{
   width: 100%;
   text-align: center;
   text-shadow: 2px 2px 4px $c-black;
+  @include mq($from:xs, $until:md){
+    font-size: 25px;
+  }
+  &.-bg{
+    height: 55px;
+    line-height: 55px;
+    background-color: $c-aquamarine;
+    text-shadow: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }

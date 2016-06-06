@@ -1,0 +1,9 @@
+mixin requirment(type, img, text)
+    if type === "small"
+        .requirment-item.-small
+            img(src= "../img/pics/" + img alt= text title= text)
+            p.text!= text
+    else
+        .requirment-item
+            img(src= "../img/pics/" + img alt= text title= text)
+            p.text!= text
