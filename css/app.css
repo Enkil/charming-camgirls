@@ -2156,15 +2156,17 @@ header form.cta-form > button.submit {
   }
 }
 
-@media (max-width: 33.74em) {
-  header section.site-phone {
-    margin-top: 50px;
-  }
-
+@media (max-width: 49.99em) {
   header p.b-cta {
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 33.74em) {
+  header section.site-phone {
+    margin-top: 50px;
   }
 }
 

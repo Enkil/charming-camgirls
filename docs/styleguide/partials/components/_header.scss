@@ -88,7 +88,7 @@ header{
     margin-bottom: 110px;
     letter-spacing: 1px;
 
-    @include mq($from:xs, $until:sm){
+    @include mq($from:xs, $until:md){
       font-size: 20px;
       margin-top: 50px;
       margin-bottom: 50px;
