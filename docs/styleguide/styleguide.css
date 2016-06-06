@@ -1606,6 +1606,16 @@ The `sprites` mixin generates identical output to the CSS template
     font-family: "AG-Demi";
     src: url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.svg#AG-Demi") format("svg"); } }
 
+h2.site-h2 {
+  font-family: "AG-Demi";
+  font-size: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000; }
+
 body {
   background-color: #fff; }
 
@@ -1748,3 +1758,40 @@ header {
       letter-spacing: 2px;
       margin-bottom: 50px;
       box-shadow: 0 1px 1px 0 #6b0533; }
+
+.s-reasons {
+  background-image: url(../img/bg/bg-reasons.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px; }
+
+.reason-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%; }
+  @media (max-width: 49.99em) {
+    .reason-item {
+      margin-top: 25px; } }
+  .reason-item .img {
+    width: 100%;
+    max-width: 62px; }
+    .reason-item .img img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  .reason-item p.text {
+    margin: 0;
+    font-family: "AG-Demi";
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 1px; }
+    .reason-item p.text span {
+      text-transform: uppercase;
+      text-decoration: underline; }
+    @media (max-width: 49.99em) {
+      .reason-item p.text {
+        text-align: center;
+        margin-top: 10px; } }

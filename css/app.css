@@ -853,6 +853,17 @@ html {
   padding: 0;
 }
 
+h2.site-h2 {
+  font-family: 'AG-Demi';
+  font-size: 30px;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
 body {
   background-color: #fff;
 }
@@ -1039,6 +1050,51 @@ header form.cta-form > button.submit {
   background: -webkit-linear-gradient(top, #bf152b, #8d0743);
   background: linear-gradient(180deg, #bf152b, #8d0743);
   box-shadow: 0 1px 1px 0 #6b0533;
+}
+
+.s-reasons {
+  padding-bottom: 30px;
+  background-image: url(../img/bg/bg-reasons.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reason-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.reason-item .img {
+  width: 100%;
+  max-width: 62px;
+}
+
+.reason-item .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.reason-item p.text {
+  font-family: 'AG-Demi';
+  font-size: 16px;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.reason-item p.text span {
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 @font-face {
@@ -2161,6 +2217,15 @@ header form.cta-form > button.submit {
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .reason-item {
+    margin-top: 25px;
+  }
+
+  .reason-item p.text {
+    margin-top: 10px;
+    text-align: center;
   }
 }
 

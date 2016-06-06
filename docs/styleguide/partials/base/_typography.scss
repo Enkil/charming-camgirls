@@ -1,2 +1,13 @@
 @include font-face('AG-Regular', amazing-grotesk, regular, amazing_grotesk_regular-webfont);
 @include font-face('AG-Demi', amazing-grotesk, demi, amazing_grotesk_demi-webfont);
+
+h2.site-h2{
+  font-family: "AG-Demi";
+  font-size: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: $c-white;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 4px $c-black;
+}
