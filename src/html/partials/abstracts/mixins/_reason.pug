@@ -1,0 +1,7 @@
+mixin reason(img, text, textHTML)
+    .reason-item
+        .column.-xs-12.-md-1.-md-offset-3._d-flex._justify-center._align-center
+            .img
+                img(src= "../img/pics/" + img alt= text title= text)
+        .column.-xs-12.-md-5
+            p.text!= textHTML

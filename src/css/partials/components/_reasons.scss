@@ -1,0 +1,44 @@
+.s-reasons{
+  background-image: url(../img/bg/bg-reasons.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.reason-item{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  @include mq($from:xs, $until:md){
+    margin-top: 25px;
+  }
+
+  .img{
+    width: 100%;
+    max-width: 62px;
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  p.text{
+    margin: 0;
+    font-family: "AG-Demi";
+    font-size: 16px;
+    color: $c-white;
+    text-shadow: 2px 2px 4px $c-black;
+    letter-spacing: 1px;
+    span{
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+    @include mq($from:xs, $until:md){
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
