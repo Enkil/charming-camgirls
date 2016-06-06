@@ -1,3 +1,37 @@
-//
-   Created by itimohin on 14.04.16.
-
+// Header
+header
+    .container
+        .row
+            // Logo
+            .column.-xs-12.-sm-1.sm-offset-1._justify-center
+                .logo-img
+                    img(src="../img/pics/logo.png" alt="Charming Camgirls" title="Charming Camgirls")
+            .column.-xs-12.-sm-4.-md-2
+                h1.site-title
+                    span.text Charming
+                    span.text.-secondline Camgirls
+                span.studio-name webcam-studio
+            .column.-md-4._sm-hidden-down
+            // Phone
+            .column.-xs-12.-sm-6.-md-4.-lg-3._d-flex._align-center._justify-center
+                section.site-phone
+                    h2.phone +7(821)123-45-67
+                    span.call звоните с 9 до 22 часов
+        // CTA
+        .row
+            .column.-xs-10.-xs-offset-1
+                p.b-cta Получи дополнительно <span class="summ">117$<sup>*</sup></span> после первого месяца работы!
+        // CTA text
+        .row._justify-center._xs-hidden-down
+            .column.-xs-10.-md-6.-lg-4
+                p.cta-text
+                    span.asterisk *
+                    span.text Хочешь узнать почему именно 117$? Тогда оставляй быстрее номер,
+                    span.text.-bigger предложение ограничено!
+        // CTA form
+        .row._justify-center
+            .column.-xs-10.-md-6.-lg-4
+                form.cta-form
+                    label.phone
+                        input(type="tel" placeholder="+7(___)___-__-__")
+                    button.submit Получить!

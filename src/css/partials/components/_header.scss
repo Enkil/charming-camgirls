@@ -1,0 +1,161 @@
+header{
+  background-image: url(../img/bg/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+
+  .logo-img{
+    width: 100%;
+    margin-top: 18px;
+    > img{
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 66px;
+      max-width: 52px;
+      margin: 0 auto;
+    }
+  }
+
+  h1.site-title{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 22px;
+
+    span.text{
+      width: 100%;
+      display: inline-block;
+      font-family:"AG-Demi";
+      font-size: 25px;
+      color: $c-white;
+      line-height: 25px;
+      margin-bottom: 5px;
+      &.-secondline{
+        letter-spacing: 1.5px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  span.studio-name{
+    font-family:"AG-Regular";
+    font-size: 11px;
+    line-height: 15px;
+    color: $c-white;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  section.site-phone{
+
+    @include mq($from:xs, $until:sm){
+      margin-top: 50px;
+    }
+
+    h2.phone{
+      font-family:"AG-Regular";
+      font-size: 27px;
+      color: $c-white;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    span.call{
+      font-family:"AG-Regular";
+      font-size: 16px;
+      color: $c-white;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  p.b-cta{
+    font-family:"AG-Demi";
+    font-size: 40px;
+    color: $c-white;
+    text-align: center;
+    width: 100%;
+    margin-top: 125px;
+    margin-bottom: 110px;
+    letter-spacing: 1px;
+
+    span.summ{
+      color: $c-red;
+    }
+  }
+
+  p.cta-text{
+    font-family:"AG-Demi";
+    font-size: 16px;
+    color: $c-white;
+    text-align: center;
+    width: 100%;
+    letter-spacing: .9px;
+    > span.asterisk{font-size: 26px;}
+    > span.text{
+      &.-bigger{
+        font-size: 18px;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  form.cta-form{
+    margin-top: 16px;
+
+    > label.phone{
+      margin-bottom: 17px;
+      display: block;
+      width: 100%;
+
+      > input{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        text-align: center;
+        height: 55px;
+        border-radius: 10px;
+        background-color: $c-yellow;
+        padding-top: 8px;
+        padding-right: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        font-family: "AG-Regular";
+        font-size: 29px;
+        color: $c-gray;
+        &::placeholder{
+          font-family: "AG-Regular";
+          font-size: 29px;
+          color: $c-gray;
+        }
+      }
+    }
+    > button.submit{
+      display: block;
+      width: 100%;
+      outline: none;
+      border: none;
+      text-align: center;
+      border-radius: 10px;
+      height: 55px;
+      background: linear-gradient(180deg, $c-red, $c-red-2);
+      font-family:"AG-Demi";
+      font-size: 31px;
+      color: $c-white;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+      box-shadow: 0 1px 1px 0 $c-red-3;
+    }
+  }
+}
+
+
