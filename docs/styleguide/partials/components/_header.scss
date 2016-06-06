@@ -141,10 +141,16 @@ header{
         font-family: "AG-Regular";
         font-size: 29px;
         color: $c-gray;
+        @include mq($from:xs, $until:sm){
+          font-size: 20px;
+        }
         &::placeholder{
           font-family: "AG-Regular";
           font-size: 29px;
           color: $c-gray;
+          @include mq($from:xs, $until:sm){
+            font-size: 20px;
+          }
         }
       }
     }

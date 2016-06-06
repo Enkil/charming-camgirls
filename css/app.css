@@ -2168,6 +2168,26 @@ header form.cta-form > button.submit {
   header section.site-phone {
     margin-top: 50px;
   }
+
+  header form.cta-form > label.phone > input {
+    font-size: 20px;
+  }
+
+  header form.cta-form > label.phone > input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+
+  header form.cta-form > label.phone > input::-moz-placeholder {
+    font-size: 20px;
+  }
+
+  header form.cta-form > label.phone > input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+
+  header form.cta-form > label.phone > input::placeholder {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=../maps/app.css.map */

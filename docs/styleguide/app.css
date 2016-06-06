@@ -1723,10 +1723,16 @@ header {
         font-family: "AG-Regular";
         font-size: 29px;
         color: #929292; }
+        @media (max-width: 33.74em) {
+          header form.cta-form > label.phone > input {
+            font-size: 20px; } }
         header form.cta-form > label.phone > input::placeholder {
           font-family: "AG-Regular";
           font-size: 29px;
           color: #929292; }
+          @media (max-width: 33.74em) {
+            header form.cta-form > label.phone > input::placeholder {
+              font-size: 20px; } }
     header form.cta-form > button.submit {
       display: block;
       width: 100%;
