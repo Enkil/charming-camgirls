@@ -2155,6 +2155,10 @@ header form.cta-form > button.submit {
     margin-top: 50px;
   }
 
+  header section.site-phone h2.phone {
+    font-size: 15px;
+  }
+
   header p.b-cta {
     font-size: 20px;
     margin-top: 50px;
