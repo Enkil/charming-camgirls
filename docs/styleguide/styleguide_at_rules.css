@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "AG-Regular";
+  src: url("../fonts/amazing-grotesk/regular/amazing_grotesk_regular-webfont.eot"), local("AG-Regular");
+  src: url("../fonts/amazing-grotesk/regular/amazing_grotesk_regular-webfont.eot?#iefix") format("embedded-opentype"), local("AG-Regular"), url("../fonts/amazing-grotesk/regular/amazing_grotesk_regular-webfont.woff") format("woff"), url("../fonts/amazing-grotesk/regular/amazing_grotesk_regular-webfont.ttf") format("truetype"), url("../fonts/amazing-grotesk/regular/amazing_grotesk_regular-webfont.svg#AG-Regular") format("svg");
+}
+
+@font-face {
+  font-family: "AG-Demi";
+  src: url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.eot"), local("AG-Demi");
+  src: url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.eot?#iefix") format("embedded-opentype"), local("AG-Demi"), url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.woff") format("woff"), url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.ttf") format("truetype"), url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.svg#AG-Demi") format("svg");
+}
