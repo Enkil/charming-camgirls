@@ -1052,6 +1052,12 @@ header form.cta-form > button.submit {
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 }
 
+@media (min-width: 33.75em) and (max-width: 49.99em) {
+  header section.site-phone h2.phone {
+    font-size: 15px;
+  }
+}
+
 @media (min-width: 540px) {
   ._sm-hidden-up {
     display: none !important;
@@ -2153,10 +2159,6 @@ header form.cta-form > button.submit {
 @media (max-width: 33.74em) {
   header section.site-phone {
     margin-top: 50px;
-  }
-
-  header section.site-phone h2.phone {
-    font-size: 15px;
   }
 
   header p.b-cta {

@@ -1661,7 +1661,7 @@ header {
     width: 100%;
     text-align: center;
     margin-bottom: 5px; }
-    @media (max-width: 33.74em) {
+    @media (min-width: 33.75em) and (max-width: 49.99em) {
       header section.site-phone h2.phone {
         font-size: 15px; } }
   header section.site-phone span.call {
