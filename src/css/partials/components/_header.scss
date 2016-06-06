@@ -64,6 +64,9 @@ header{
       width: 100%;
       text-align: center;
       margin-bottom: 5px;
+      @include mq($from:sm, $until:md){
+        font-size: 15px;
+      }
     }
     span.call{
       font-family:"AG-Regular";
@@ -84,6 +87,12 @@ header{
     margin-top: 125px;
     margin-bottom: 110px;
     letter-spacing: 1px;
+
+    @include mq($from:xs, $until:md){
+      font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
 
     span.summ{
       color: $c-red;
@@ -132,10 +141,16 @@ header{
         font-family: "AG-Regular";
         font-size: 29px;
         color: $c-gray;
+        @include mq($from:xs, $until:sm){
+          font-size: 20px;
+        }
         &::placeholder{
           font-family: "AG-Regular";
           font-size: 29px;
           color: $c-gray;
+          @include mq($from:xs, $until:sm){
+            font-size: 20px;
+          }
         }
       }
     }
