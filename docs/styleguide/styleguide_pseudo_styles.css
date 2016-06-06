@@ -7,3 +7,15 @@ a.pseudo-class-active,
 a.pseudo-class-hover {
   outline: 0;
 }
+
+.s-requirement div.text p.pseudo-class-first-child {
+  margin-bottom: 30px;
+}
+
+.requirment-item.pseudo-class-hover > img {
+  transform: scale(2);
+}
+
+.requirment-item.-small.pseudo-class-first-child {
+  margin-bottom: 20px;
+}
