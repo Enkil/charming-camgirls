@@ -1032,7 +1032,7 @@ header form.cta-form > label.phone > input {
   border: none;
   border-radius: 10px;
   outline: none;
-  background-color: #f4eccd;
+  background-color: #fff;
 }
 
 header form.cta-form > label.phone > input::-webkit-input-placeholder {
@@ -1057,6 +1057,14 @@ header form.cta-form > label.phone > input::placeholder {
   font-family: 'AG-Regular';
   font-size: 29px;
   color: #929292;
+}
+
+header form.cta-form > label.phone > input.-error {
+  background-color: #f4eccd;
+}
+
+header form.cta-form > label.phone > input.-valid {
+  background-color: #d5f8d6;
 }
 
 header form.cta-form > button.submit {
@@ -1243,7 +1251,7 @@ section.b-final form.casting-form label > input {
   border: none;
   border-radius: 10px;
   outline: none;
-  background-color: #f4eccd;
+  background-color: #fff;
 }
 
 section.b-final form.casting-form label > input::-webkit-input-placeholder {
@@ -1268,6 +1276,14 @@ section.b-final form.casting-form label > input::placeholder {
   font-family: 'AG-Regular';
   font-size: 18px;
   color: #929292;
+}
+
+section.b-final form.casting-form label > input.-error {
+  background-color: #f4eccd;
+}
+
+section.b-final form.casting-form label > input.-valid {
+  background-color: #d5f8d6;
 }
 
 section.b-final form.casting-form button.submit {

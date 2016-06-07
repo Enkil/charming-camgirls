@@ -33,11 +33,11 @@
     <!-- CTA form-->
     <div class="row _justify-center">
       <div class="column -xs-10 -md-6 -lg-4">
-        <form class="cta-form">
+        <form class="cta-form" method="post" action="mail.php">
           <label class="phone">
-            <input type="tel" placeholder="+7(___)___-__-__"/>
+            <input type="tel" placeholder="+7(___)___-__-__" name="phone-header" required="required"/>
           </label>
-          <button class="submit">Получить!</button>
+          <button class="submit" name="header-send" value="Send Message">Получить!</button>
         </form>
       </div>
     </div>

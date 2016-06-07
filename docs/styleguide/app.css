@@ -1747,7 +1747,7 @@ header {
         text-align: center;
         height: 55px;
         border-radius: 10px;
-        background-color: #f4eccd;
+        background-color: #fff;
         padding-top: 8px;
         padding-right: 10px;
         padding-left: 10px;
@@ -1766,6 +1766,10 @@ header {
           @media (max-width: 33.74em) {
             header form.cta-form > label.phone > input::placeholder {
               font-size: 20px; } }
+        header form.cta-form > label.phone > input.-error {
+          background-color: #f4eccd; }
+        header form.cta-form > label.phone > input.-valid {
+          background-color: #d5f8d6; }
     header form.cta-form > button.submit {
       display: block;
       width: 100%;
@@ -1901,7 +1905,7 @@ section.b-final {
       text-align: left;
       height: 55px;
       border-radius: 10px;
-      background-color: #f4eccd;
+      background-color: #fff;
       padding-top: 8px;
       padding-right: 10px;
       padding-left: 20px;
@@ -1914,6 +1918,10 @@ section.b-final {
         font-family: "AG-Regular";
         font-size: 18px;
         color: #929292; }
+      section.b-final form.casting-form label > input.-error {
+        background-color: #f4eccd; }
+      section.b-final form.casting-form label > input.-valid {
+        background-color: #d5f8d6; }
   section.b-final form.casting-form button.submit {
     text-transform: uppercase;
     display: block;

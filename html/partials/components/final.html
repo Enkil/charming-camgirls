@@ -19,19 +19,19 @@
         <h3 class="site-h3">Запись на кастинг</h3>
       </div>
     </div>
-    <form class="casting-form row">
+    <form class="casting-form row" method="post" action="mail.php">
       <div class="column -xs-12 -md-2 -md-offset-2">
         <label>
-          <input type="text" placeholder="Имя"/>
+          <input type="text" placeholder="Имя" name="name-final" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-3">
         <label>
-          <input type="tel" placeholder="+7(___)___-__-__"/>
+          <input type="tel" placeholder="+7(___)___-__-__" name="phone-final" required="required"/>
         </label>
       </div>
       <div class="column -xs-12 -md-3">
-        <button class="submit">Записаться!</button>
+        <button class="submit" name="final-send" value="Send Message">Записаться!</button>
       </div>
     </form>
     <div class="row">
@@ -39,7 +39,7 @@
         <p class="smalltext">если заполнить здесь, то получишь 127$!</p>
         <p class="biggertext">По телефону ответим на все вопросы!;)</p>
       </div>
-      <div class="column -xs-12 -md-3 _d-flex _justify-right"><a class="notrecord" href="javascript:viod(0)">Не буду записываться</a></div>
+      <div class="column -xs-12 -md-3 _d-flex _justify-right"><a class="notrecord" href="javascript:void(0)">Не буду записываться</a></div>
     </div>
   </div>
 </section>
