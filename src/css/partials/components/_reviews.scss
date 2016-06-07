@@ -1,0 +1,90 @@
+.b-reviews{
+  margin-bottom: 35px;
+
+  p.text{
+    width: 100%;
+    font-family: "AG-Demi-Italic";
+    font-style: italic;
+    font-size: 16px;
+    color: $c-gray-2;
+  }
+}
+
+.b-slider{
+  margin-bottom: 35px;
+  box-sizing: border-box;
+
+  .slick-arrow{
+    @include transition();
+    width: 27px;
+    height: 69px;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+    position: absolute;
+    top: 35%;
+    z-index: 50;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    outline: none;
+    opacity: .7;
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  .slick-prev{
+    left: -60px;
+    background-image: url("../img/pics/slider-arrow.png");
+  }
+  .slick-next{
+    right: -60px;
+    transform: rotate(180deg);
+    background-image: url("../img/pics/slider-arrow.png");
+  }
+}
+
+.b-review{
+
+  .text{
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: $c-aquamarine-2;
+
+    p{
+      font-family: "AG-Regular";
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: $c-dark-gray;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .b-data{
+
+    .b-salary{
+
+      .summ{
+
+        &.-old{}
+        &.-new{}
+
+        span{}
+        span.num{}
+        .chart{}
+      }
+    }
+
+    .person{
+
+      span{}
+      span.name{
+
+      }
+      span.working{}
+    }
+  }
+}

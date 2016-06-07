@@ -1,5 +1,6 @@
 @include font-face('AG-Regular', amazing-grotesk, regular, amazing_grotesk_regular-webfont);
 @include font-face('AG-Demi', amazing-grotesk, demi, amazing_grotesk_demi-webfont);
+@include font-face('AG-Demi-Italic', amazing-grotesk, demi-italic, amazing_grotesk_demi_italic-webfont);
 
 h2.site-h2{
   font-family: "AG-Demi";
@@ -25,6 +26,12 @@ h2.site-h2{
     text-shadow: none;
     margin-top: 0;
     margin-bottom: 30px;
+  }
+  &.-reviews{
+    text-shadow: none;
+    color: $c-green-4;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 

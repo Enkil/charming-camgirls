@@ -1,0 +1,17 @@
+include ../abstracts/mixins/_review.pug
+// Reviews
+section.container.b-reviews
+    .row
+        .column.-xs-10.-xs-offset-1
+            h2.site-h2.-reviews Отзывы <sup>*</sup>
+    // Slider
+    .row
+        .column.-xs-10.-xs-offset-1
+            .b-slider#js-reviews-slider
+                +review
+                +review
+                +review
+                +review
+    .row
+        .column.-xs-6.-xs-offset-3
+          p.text *Мы не ставим фотографии моделей по понятным причинам, но отзывы настоящие. Их отсавили наши реальные модели.

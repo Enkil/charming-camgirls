@@ -1,6 +1,7 @@
 window.$ = window.jQuery =  require('jquery');
 window.inputmask =          require('jquery.inputmask');
 window.validate =           require('jquery-validation');
+window.slick =              require('./vendor/bower/slick');
 
 $(document).ready(function() {
 
@@ -35,6 +36,14 @@ $(document).ready(function() {
             });
         }
         event.preventDefault(); // stop form from redirecting to java servlet page
+    });
+
+    // Reviews slider
+    $("#js-reviews-slider").slick({
+        dots: false,
+        fade: false,
+        autoplay: false,
+        slidesToShow: 1
     });
 
 });
