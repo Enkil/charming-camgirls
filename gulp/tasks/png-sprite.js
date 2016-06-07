@@ -22,7 +22,7 @@ gulp.task('png-sprite', () => {
     var spriteData = gulp.src(config.src)
         .pipe(spritesmith({
             imgName: 'png-sprite.png',
-            imgPath: config.dest + 'png-sprite.png',
+            imgPath: '../img/sprite/' + 'png-sprite.png',
             padding: 1,
             cssFormat: 'scss_maps',
             algorithm: 'binary-tree',

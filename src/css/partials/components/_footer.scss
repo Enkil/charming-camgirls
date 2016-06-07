@@ -1,0 +1,44 @@
+footer{
+  background-color: $c-light-blue;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  .links{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    @include mq($from:xs, $until:sm){
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  span{
+    display: inline-block;
+    font-family: "AG-Regular";
+    font-size: 16px;
+    color: $c-white;
+    margin-right: 10px;
+  }
+
+  a.icon{
+    @include transition();
+    display: inline-block;
+    margin-right: 5px;
+    &:hover{
+      transform: scale(1.2);
+    }
+    &.-vk{  @include sprite($s-i-vk);  }
+    &.-inst{  @include sprite($s-i-inst);  }
+    &.-fb{  @include sprite($s-i-fb);  }
+  }
+
+  .logo{
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
