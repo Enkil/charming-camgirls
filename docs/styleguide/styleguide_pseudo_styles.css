@@ -19,3 +19,7 @@ a.pseudo-class-hover {
 .requirment-item.-small.pseudo-class-first-child {
   margin-bottom: 20px;
 }
+
+section.b-final div.text p.pseudo-class-last-child {
+  margin-bottom: 0;
+}

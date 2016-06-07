@@ -8,11 +8,108 @@ section.b-final{
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
+    box-shadow: 0 2px 4px -2px $c-black;
 
     p{
       font-family: "AG-Demi";
-      font-size: 15px;
+      font-size: 16px;
       color: $c-white;
+      margin-top: 0;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      span.big{
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
     }
+  }
+
+  form.casting-form{
+
+    label{
+      margin-bottom: 15px;
+      display: block;
+      width: 100%;
+
+      > input{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        text-align: left;
+        height: 55px;
+        border-radius: 10px;
+        background-color: $c-yellow;
+        padding-top: 8px;
+        padding-right: 10px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        font-family: "AG-Regular";
+        font-size: 18px;
+        color: $c-gray;
+        &::placeholder{
+          font-family: "AG-Regular";
+          font-size: 18px;
+          color: $c-gray;
+        }
+      }
+    }
+
+    button.submit{
+      display: block;
+      width: 100%;
+      outline: none;
+      border: none;
+      text-align: center;
+      border-radius: 10px;
+      height: 55px;
+      background: linear-gradient(180deg, $c-green, $c-green-2);
+      font-family:"AG-Demi";
+      font-size: 18px;
+      color: $c-white;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      box-shadow: 0 1px 1px 0 $c-green-3;
+    }
+  }
+
+  p.smalltext{
+    font-family: "AG-Regular";
+    font-size: 12px;
+    color: $c-white;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  p.biggertext{
+    font-family: "AG-Regular";
+    font-size: 18px;
+    color: $c-white;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  a.notrecord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    height: 35px;
+    background: linear-gradient(180deg, $c-red, $c-red-2);
+    font-family:"AG-Demi";
+    font-size: 11px;
+    color: $c-white;
+    letter-spacing: 2px;
+    box-shadow: 0 1px 1px 0 $c-red-3;
+    text-decoration: none;
   }
 }

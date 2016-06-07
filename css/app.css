@@ -879,6 +879,16 @@ h2.site-h2.-no-shadow {
   text-shadow: none;
 }
 
+h3.site-h3 {
+  font-family: 'AG-Regular';
+  font-size: 22px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
 body {
   background-color: #fff;
 }
@@ -1190,12 +1200,138 @@ section.b-final div.text {
   padding: 20px;
   border-radius: 10px;
   background-color: #147c9e;
+  box-shadow: 0 2px 4px -2px #000;
 }
 
 section.b-final div.text p {
   font-family: 'AG-Demi';
-  font-size: 15px;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
   color: #fff;
+}
+
+section.b-final div.text p:last-child {
+  margin-bottom: 0;
+}
+
+section.b-final div.text p span.big {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+section.b-final form.casting-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+section.b-final form.casting-form label > input {
+  font-family: 'AG-Regular';
+  font-size: 18px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 55px;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-left: 20px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #929292;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f4eccd;
+}
+
+section.b-final form.casting-form label > input::-webkit-input-placeholder {
+  font-family: 'AG-Regular';
+  font-size: 18px;
+  color: #929292;
+}
+
+section.b-final form.casting-form label > input::-moz-placeholder {
+  font-family: 'AG-Regular';
+  font-size: 18px;
+  color: #929292;
+}
+
+section.b-final form.casting-form label > input:-ms-input-placeholder {
+  font-family: 'AG-Regular';
+  font-size: 18px;
+  color: #929292;
+}
+
+section.b-final form.casting-form label > input::placeholder {
+  font-family: 'AG-Regular';
+  font-size: 18px;
+  color: #929292;
+}
+
+section.b-final form.casting-form button.submit {
+  font-family: 'AG-Demi';
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  height: 55px;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: -webkit-linear-gradient(top, #67e76c, #0f8817);
+  background: linear-gradient(180deg, #67e76c, #0f8817);
+  box-shadow: 0 1px 1px 0 #0b6211;
+}
+
+section.b-final p.smalltext {
+  font-family: 'AG-Regular';
+  font-size: 12px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+section.b-final p.biggertext {
+  font-family: 'AG-Regular';
+  font-size: 18px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+section.b-final a.notrecord {
+  font-family: 'AG-Demi';
+  font-size: 11px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+  background: -webkit-linear-gradient(top, #bf152b, #8d0743);
+  background: linear-gradient(180deg, #bf152b, #8d0743);
+  box-shadow: 0 1px 1px 0 #6b0533;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @font-face {
