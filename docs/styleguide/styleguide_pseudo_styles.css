@@ -23,3 +23,7 @@ a.pseudo-class-hover {
 section.b-final div.text p.pseudo-class-last-child {
   margin-bottom: 0;
 }
+
+footer a.icon.pseudo-class-hover {
+  transform: scale(1.2);
+}

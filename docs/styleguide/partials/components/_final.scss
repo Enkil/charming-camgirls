@@ -61,6 +61,7 @@ section.b-final{
     }
 
     button.submit{
+      text-transform: uppercase;
       display: block;
       width: 100%;
       outline: none;
@@ -111,5 +112,8 @@ section.b-final{
     letter-spacing: 2px;
     box-shadow: 0 1px 1px 0 $c-red-3;
     text-decoration: none;
+    @include mq($from:xs, $until:md){
+      width: 100%;
+    }
   }
 }

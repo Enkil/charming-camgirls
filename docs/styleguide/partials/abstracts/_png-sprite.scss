@@ -7,47 +7,47 @@ SCSS variables are information about icon's compiled state, stored under its ori
 
 At the bottom of this section, we provide information about the spritesheet itself
 */
-$s-arrow-2: (
-  name: 's-arrow-2',
+$s-i-fb: (
+  name: 's-i-fb',
   x: 0px,
   y: 0px,
   offset-x: 0px,
   offset-y: 0px,
-  width: 600px,
-  height: 1053px,
-  total-width: 833px,
-  total-height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png'
+  width: 20px,
+  height: 20px,
+  total-width: 41px,
+  total-height: 41px,
+  image: '../img/sprite/png-sprite.png'
 );
-$s-default-avatar: (
-  name: 's-default-avatar',
-  x: 601px,
+$s-i-inst: (
+  name: 's-i-inst',
+  x: 21px,
   y: 0px,
-  offset-x: -601px,
+  offset-x: -21px,
   offset-y: 0px,
-  width: 232px,
-  height: 232px,
-  total-width: 833px,
-  total-height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png'
+  width: 20px,
+  height: 20px,
+  total-width: 41px,
+  total-height: 41px,
+  image: '../img/sprite/png-sprite.png'
 );
-$s-flag: (
-  name: 's-flag',
-  x: 601px,
-  y: 233px,
-  offset-x: -601px,
-  offset-y: -233px,
-  width: 95px,
-  height: 104px,
-  total-width: 833px,
-  total-height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png'
+$s-i-vk: (
+  name: 's-i-vk',
+  x: 0px,
+  y: 21px,
+  offset-x: 0px,
+  offset-y: -21px,
+  width: 20px,
+  height: 20px,
+  total-width: 41px,
+  total-height: 41px,
+  image: '../img/sprite/png-sprite.png'
 );
 $spritesheet: (
-  width: 833px,
-  height: 1053px,
-  image: 'client/dist/img/sprite/png-sprite.png',
-  sprites: ($s-arrow-2, $s-default-avatar, $s-flag, )
+  width: 41px,
+  height: 41px,
+  image: '../img/sprite/png-sprite.png',
+  sprites: ($s-i-fb, $s-i-inst, $s-i-vk, )
 );
 
 /*

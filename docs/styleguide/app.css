@@ -1915,6 +1915,7 @@ section.b-final {
         font-size: 18px;
         color: #929292; }
   section.b-final form.casting-form button.submit {
+    text-transform: uppercase;
     display: block;
     width: 100%;
     outline: none;
@@ -1959,3 +1960,50 @@ section.b-final {
     letter-spacing: 2px;
     box-shadow: 0 1px 1px 0 #6b0533;
     text-decoration: none; }
+    @media (max-width: 49.99em) {
+      section.b-final a.notrecord {
+        width: 100%; } }
+
+footer {
+  background-color: #147c9e;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  footer .links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; }
+    @media (max-width: 33.74em) {
+      footer .links {
+        justify-content: center;
+        margin-bottom: 20px; } }
+  footer span {
+    display: inline-block;
+    font-family: "AG-Regular";
+    font-size: 16px;
+    color: #fff;
+    margin-right: 10px; }
+  footer a.icon {
+    transition: all 0.325s ease 0s;
+    display: inline-block;
+    margin-right: 5px; }
+    footer a.icon:hover {
+      transform: scale(1.2); }
+    footer a.icon.-vk {
+      background-image: url("../img/sprite/png-sprite.png");
+      background-position: 0px -21px;
+      width: 20px;
+      height: 20px; }
+    footer a.icon.-inst {
+      background-image: url("../img/sprite/png-sprite.png");
+      background-position: -21px 0px;
+      width: 20px;
+      height: 20px; }
+    footer a.icon.-fb {
+      background-image: url("../img/sprite/png-sprite.png");
+      background-position: 0px 0px;
+      width: 20px;
+      height: 20px; }
+  footer .logo img {
+    display: block;
+    width: 100%;
+    height: auto; }

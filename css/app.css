@@ -1279,6 +1279,7 @@ section.b-final form.casting-form button.submit {
   margin-bottom: 15px;
   text-align: center;
   letter-spacing: 2px;
+  text-transform: uppercase;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -1332,6 +1333,72 @@ section.b-final a.notrecord {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #147c9e;
+}
+
+footer .links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+footer span {
+  font-family: 'AG-Regular';
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+}
+
+footer a.icon {
+  display: inline-block;
+  margin-right: 5px;
+  -webkit-transition: all .325s ease 0s;
+  transition: all .325s ease 0s;
+}
+
+footer a.icon:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+footer a.icon.-vk {
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/sprite/png-sprite.png');
+  background-position: 0 -21px;
+}
+
+footer a.icon.-inst {
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/sprite/png-sprite.png');
+  background-position: -21px 0;
+}
+
+footer a.icon.-fb {
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/sprite/png-sprite.png');
+  background-position: 0 0;
+}
+
+footer .logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @font-face {
@@ -2472,6 +2539,10 @@ section.b-final a.notrecord {
   .requirment-item.-small:first-child {
     margin-top: 20px;
   }
+
+  section.b-final a.notrecord {
+    width: 100%;
+  }
 }
 
 @media (max-width: 33.74em) {
@@ -2497,6 +2568,14 @@ section.b-final a.notrecord {
 
   header form.cta-form > label.phone > input::placeholder {
     font-size: 20px;
+  }
+
+  footer .links {
+    margin-bottom: 20px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
