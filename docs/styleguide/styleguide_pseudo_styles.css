@@ -3,9 +3,21 @@ a.pseudo-class-hover {
   outline: 0;
 }
 
+.slick-list.pseudo-class-focus {
+  outline: none;
+}
+
 a.pseudo-class-active,
 a.pseudo-class-hover {
   outline: 0;
+}
+
+.b-slider .slick-arrow.pseudo-class-hover {
+  opacity: 1;
+}
+
+.b-review .text p.pseudo-class-last-child {
+  margin-bottom: 0;
 }
 
 .s-requirement div.text p.pseudo-class-first-child {

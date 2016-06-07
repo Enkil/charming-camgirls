@@ -9,3 +9,9 @@
   src: url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.eot"), local("AG-Demi");
   src: url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.eot?#iefix") format("embedded-opentype"), local("AG-Demi"), url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.woff") format("woff"), url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.ttf") format("truetype"), url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.svg#AG-Demi") format("svg");
 }
+
+@font-face {
+  font-family: "AG-Demi-Italic";
+  src: url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.eot"), local("AG-Demi-Italic");
+  src: url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.eot?#iefix") format("embedded-opentype"), local("AG-Demi-Italic"), url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.woff") format("woff"), url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.ttf") format("truetype"), url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.svg#AG-Demi-Italic") format("svg");
+}

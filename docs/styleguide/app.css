@@ -389,6 +389,79 @@ td,
 th {
   padding: 0; }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -1606,6 +1679,16 @@ The `sprites` mixin generates identical output to the CSS template
     font-family: "AG-Demi";
     src: url("../fonts/amazing-grotesk/demi/amazing_grotesk_demi-webfont.svg#AG-Demi") format("svg"); } }
 
+@font-face {
+  font-family: "AG-Demi-Italic";
+  src: url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.eot"), local("AG-Demi-Italic");
+  src: url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.eot?#iefix") format("embedded-opentype"), local("AG-Demi-Italic"), url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.woff") format("woff"), url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.ttf") format("truetype"), url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.svg#AG-Demi-Italic") format("svg"); }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "AG-Demi-Italic";
+    src: url("../fonts/amazing-grotesk/demi-italic/amazing_grotesk_demi_italic-webfont.svg#AG-Demi-Italic") format("svg"); } }
+
 h2.site-h2 {
   font-family: "AG-Demi";
   font-size: 30px;
@@ -1629,6 +1712,11 @@ h2.site-h2 {
     text-shadow: none;
     margin-top: 0;
     margin-bottom: 30px; }
+  h2.site-h2.-reviews {
+    text-shadow: none;
+    color: #137757;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 h3.site-h3 {
   font-family: "AG-Regular";
@@ -1785,6 +1873,55 @@ header {
       letter-spacing: 2px;
       margin-bottom: 50px;
       box-shadow: 0 1px 1px 0 #6b0533; }
+
+.b-reviews {
+  margin-bottom: 35px; }
+  .b-reviews p.text {
+    width: 100%;
+    font-family: "AG-Demi-Italic";
+    font-style: italic;
+    font-size: 16px;
+    color: #838383; }
+
+.b-slider {
+  margin-bottom: 35px;
+  box-sizing: border-box; }
+  .b-slider .slick-arrow {
+    transition: all 0.325s ease 0s;
+    width: 27px;
+    height: 69px;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+    position: absolute;
+    top: 35%;
+    z-index: 50;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    outline: none;
+    opacity: .7; }
+    .b-slider .slick-arrow:hover {
+      opacity: 1; }
+  .b-slider .slick-prev {
+    left: -60px;
+    background-image: url("../img/pics/slider-arrow.png"); }
+  .b-slider .slick-next {
+    right: -60px;
+    transform: rotate(180deg);
+    background-image: url("../img/pics/slider-arrow.png"); }
+
+.b-review .text {
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #bde9f2; }
+  .b-review .text p {
+    font-family: "AG-Regular";
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #4a4a4a; }
+    .b-review .text p:last-child {
+      margin-bottom: 0; }
 
 .s-reasons {
   background-image: url(../img/bg/bg-reasons.png);
