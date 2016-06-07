@@ -132,7 +132,7 @@ header{
         text-align: center;
         height: 55px;
         border-radius: 10px;
-        background-color: $c-yellow;
+        background-color: $c-white;
         padding-top: 8px;
         padding-right: 10px;
         padding-left: 10px;
@@ -151,6 +151,12 @@ header{
           @include mq($from:xs, $until:sm){
             font-size: 20px;
           }
+        }
+        &.-error{
+          background-color: $c-yellow;
+        }
+        &.-valid{
+          background-color: lighten($c-green, 25%);
         }
       }
     }

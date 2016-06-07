@@ -12,18 +12,18 @@ section.b-final
         .row
             .column.-xs-12.-md-8.-md-offset-2
                 h3.site-h3 Запись на кастинг
-        form.casting-form.row
+        form(method="post" action="mail.php").casting-form.row
             .column.-xs-12.-md-2.-md-offset-2
                 label
-                    input(type="text" placeholder="Имя")
+                    input(type="text" placeholder="Имя" name="name-final" required)
             .column.-xs-12.-md-3
                 label
-                    input(type="tel" placeholder="+7(___)___-__-__")
+                    input(type="tel" placeholder="+7(___)___-__-__" name="phone-final" required)
             .column.-xs-12.-md-3
-                button.submit Записаться!
+                button(name="final-send" value="Send Message").submit Записаться!
         .row
             .column.-xs-12.-md-5.-md-offset-2
                 p.smalltext если заполнить здесь, то получишь 127$!
                 p.biggertext По телефону ответим на все вопросы!;)
             .column.-xs-12.-md-3._d-flex._justify-right
-                a(href="javascript:viod(0)").notrecord Не буду записываться
+                a(href="javascript:void(0)").notrecord Не буду записываться

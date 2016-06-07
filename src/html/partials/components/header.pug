@@ -31,7 +31,7 @@ header
         // CTA form
         .row._justify-center
             .column.-xs-10.-md-6.-lg-4
-                form.cta-form
+                form(method="post" action="mail.php").cta-form
                     label.phone
-                        input(type="tel" placeholder="+7(___)___-__-__")
-                    button.submit Получить!
+                        input(type="tel" placeholder="+7(___)___-__-__" name="phone-header" required)
+                    button(name="header-send" value="Send Message").submit Получить!

@@ -43,7 +43,7 @@ section.b-final{
         text-align: left;
         height: 55px;
         border-radius: 10px;
-        background-color: $c-yellow;
+        background-color: $c-white;
         padding-top: 8px;
         padding-right: 10px;
         padding-left: 20px;
@@ -56,6 +56,12 @@ section.b-final{
           font-family: "AG-Regular";
           font-size: 18px;
           color: $c-gray;
+        }
+        &.-error{
+          background-color: $c-yellow;
+        }
+        &.-valid{
+          background-color: lighten($c-green, 25%);
         }
       }
     }
