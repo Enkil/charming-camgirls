@@ -1904,12 +1904,21 @@ header {
     .b-slider .slick-arrow:hover {
       opacity: 1; }
   .b-slider .slick-prev {
-    left: -60px;
+    left: -50px;
     background-image: url("../img/pics/slider-arrow.png"); }
   .b-slider .slick-next {
-    right: -60px;
+    right: -50px;
     transform: rotate(180deg);
     background-image: url("../img/pics/slider-arrow.png"); }
+
+@media (max-width: 49.99em) {
+  .b-review .review-data {
+    order: 1;
+    margin-bottom: 20px; } }
+
+@media (max-width: 49.99em) {
+  .b-review .review-text {
+    order: 2; } }
 
 .b-review .text {
   box-sizing: border-box;
@@ -1922,6 +1931,93 @@ header {
     color: #4a4a4a; }
     .b-review .text p:last-child {
       margin-bottom: 0; }
+
+.b-review .b-data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; }
+  .b-review .b-data .b-salary {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    @media (max-width: 49.99em) {
+      .b-review .b-data .b-salary {
+        justify-content: center; } }
+    .b-review .b-data .b-salary .summ {
+      width: 60px;
+      text-align: center; }
+      .b-review .b-data .b-salary .summ.-old {
+        margin-right: 10px; }
+        .b-review .b-data .b-salary .summ.-old .chart {
+          background-color: #838383; }
+      .b-review .b-data .b-salary .summ.-new .chart {
+        background-color: #67e76c; }
+      .b-review .b-data .b-salary .summ.-new span.word, .b-review .b-data .b-salary .summ.-new span.num {
+        color: #67e76c; }
+        .b-review .b-data .b-salary .summ.-new span.word:after, .b-review .b-data .b-salary .summ.-new span.num:after {
+          color: #67e76c; }
+      .b-review .b-data .b-salary .summ span.word {
+        font-family: "AG-Demi-Italic";
+        font-style: italic;
+        font-size: 19px;
+        color: #838383; }
+      .b-review .b-data .b-salary .summ span.num {
+        font-family: "AG-Demi-Italic";
+        font-style: italic;
+        font-size: 16px;
+        color: #838383;
+        margin-bottom: 5px;
+        display: inline-block;
+        vertical-align: middle; }
+        .b-review .b-data .b-salary .summ span.num:after {
+          content: '$';
+          font-family: "AG-Demi-Italic";
+          font-style: italic;
+          font-size: 16px;
+          color: #838383;
+          display: inline-block;
+          vertical-align: middle; }
+      .b-review .b-data .b-salary .summ .chart {
+        transition: height 1.5s ease 0s;
+        display: inline-block;
+        width: 40px;
+        height: 0; }
+  @media (max-width: 49.99em) {
+    .b-review .b-data .person {
+      text-align: center; } }
+  .b-review .b-data .person span.wage {
+    font-family: "AG-Demi-Italic";
+    font-style: italic;
+    font-size: 19px;
+    color: #838383;
+    display: inline-block;
+    margin-bottom: 5px; }
+    .b-review .b-data .person span.wage:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #838383;
+      margin-top: 2px; }
+  .b-review .b-data .person span.name {
+    font-family: "AG-Demi-Italic";
+    font-style: italic;
+    font-size: 19px;
+    color: #838383;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold; }
+  .b-review .b-data .person span.working {
+    font-family: "AG-Demi-Italic";
+    font-style: italic;
+    font-size: 14px;
+    color: #838383;
+    font-weight: normal;
+    display: inline-block;
+    width: 100%; }
 
 .s-reasons {
   background-image: url(../img/bg/bg-reasons.png);

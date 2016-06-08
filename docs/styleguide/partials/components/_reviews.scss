@@ -35,17 +35,29 @@
   }
 
   .slick-prev{
-    left: -60px;
+    left: -50px;
     background-image: url("../img/pics/slider-arrow.png");
   }
   .slick-next{
-    right: -60px;
+    right: -50px;
     transform: rotate(180deg);
     background-image: url("../img/pics/slider-arrow.png");
   }
 }
 
 .b-review{
+
+  .review-data{
+    @include mq($from:xs, $until:md){
+      order: 1;
+      margin-bottom: 20px;
+    }
+  }
+  .review-text{
+    @include mq($from:xs, $until:md){
+      order: 2;
+    }
+  }
 
   .text{
     box-sizing: border-box;
@@ -64,27 +76,117 @@
   }
 
   .b-data{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 
     .b-salary{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      @include mq($from:xs, $until:md){
+        justify-content: center;
+      }
 
       .summ{
+        width: 60px;
+        text-align: center;
 
-        &.-old{}
-        &.-new{}
+        &.-old{
+          margin-right: 10px;
 
-        span{}
-        span.num{}
-        .chart{}
+          .chart{
+            background-color: $c-gray-2;
+          }
+        }
+        &.-new{
+          
+          .chart{
+            background-color: $c-green;
+          }
+          span.word, span.num{
+            color:$c-green;
+            &:after{
+              color:$c-green;
+            }
+          }
+        }
+
+        span.word{
+          font-family: "AG-Demi-Italic";
+          font-style: italic;
+          font-size: 19px;
+          color: $c-gray-2;
+        }
+        span.num{
+          font-family: "AG-Demi-Italic";
+          font-style: italic;
+          font-size: 16px;
+          color: $c-gray-2;
+          margin-bottom: 5px;
+          display: inline-block;
+          vertical-align: middle;
+          &:after{
+            content: '$';
+            font-family: "AG-Demi-Italic";
+            font-style: italic;
+            font-size: 16px;
+            color: $c-gray-2;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .chart{
+          @include transition(height,1.5s);
+          display: inline-block;
+          width: 40px;
+          height: 0;
+        }
       }
     }
 
     .person{
-
-      span{}
-      span.name{
-
+      @include mq($from:xs, $until:md){
+        text-align: center;
       }
-      span.working{}
+
+      span.wage{
+        font-family: "AG-Demi-Italic";
+        font-style: italic;
+        font-size: 19px;
+        color: $c-gray-2;
+        display: inline-block;
+        margin-bottom: 5px;
+        &:after{
+          content: '';
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: $c-gray-2;
+          margin-top: 2px;
+        }
+      }
+      span.name{
+        font-family: "AG-Demi-Italic";
+        font-style: italic;
+        font-size: 19px;
+        color: $c-gray-2;
+        display: inline-block;
+        width: 100%;
+        font-weight: bold;
+      }
+      span.working{
+        font-family: "AG-Demi-Italic";
+        font-style: italic;
+        font-size: 14px;
+        color: $c-gray-2;
+        font-weight: normal;
+        display: inline-block;
+        width: 100%;
+      }
     }
   }
 }
