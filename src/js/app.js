@@ -38,8 +38,62 @@ $(document).ready(function() {
         event.preventDefault(); // stop form from redirecting to java servlet page
     });
 
-    // Reviews slider
-    $("#js-reviews-slider").slick({
+
+    //// Reviews slider
+
+    // Animate reviews chart
+    function slideChartAnimate (event, slide){
+        $(slide).find('.chart').each(function () {
+            var _this = $(this);
+            var chartHeight = _this.data('height');
+            _this.css('height', chartHeight);
+        });
+    }
+    // Animate reviews salary
+    function slideSalaryAnimate (event, slide){
+        $(slide).find('span.num').each(function () {
+            var _this = $(this);
+            var salary = _this.data('salary');
+            var currentNumber = _this.text();
+
+            $({numberValue: currentNumber}).animate({numberValue: salary}, {
+                duration: 1500,
+                easing: 'swing',
+                step: function() {
+                    _this.text(Math.ceil(this.numberValue));
+                }
+            });
+
+
+        });
+    }
+
+    var reviewsSlider = $('#js-reviews-slider');
+
+    // Animate data on init for thirst slide
+    reviewsSlider.on('init', function(event, slick){
+        var currSlide = $(slick.$slides.get([0]));
+
+        currSlide.bind('chartAnimate', slideChartAnimate(event,currSlide));
+        currSlide.trigger('chartAnimate');
+
+        currSlide.bind('salaryAnimate', slideSalaryAnimate(event,currSlide));
+        currSlide.trigger('salaryAnimate');
+
+    });
+    // Animate data on change slide for current slide
+    reviewsSlider.on('afterChange', function(event, slick, currentSlide){
+        var currSlide = $(slick.$slides.get(currentSlide));
+
+        currSlide.bind('chartAnimate', slideChartAnimate(event, currSlide));
+        currSlide.trigger('chartAnimate');
+
+        currSlide.bind('salaryAnimate', slideSalaryAnimate(event, currSlide));
+        currSlide.trigger('salaryAnimate');
+
+    });
+
+    reviewsSlider.slick({
         dots: false,
         fade: false,
         autoplay: false,
