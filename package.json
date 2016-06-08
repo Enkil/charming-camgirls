@@ -8,6 +8,7 @@
     "browser-sync": "^2.9.11",
     "browser-sync-spa": "^1.0.3",
     "browserify": "^11.2.0",
+    "critical": "^0.7.3",
     "del": "^2.0.2",
     "event-stream": "^3.3.2",
     "gulp": "^3.9.0",
